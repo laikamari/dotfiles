@@ -5,6 +5,7 @@ style = 'green'
 
 [username]
 disabled = true
+#format = "[$user]($style) "
 
 [character]
 success_symbol = "[>](bold green)"
