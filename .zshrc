@@ -5,6 +5,13 @@
 alias dotfiles='/usr/local/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 setopt completealiases
 
+###########
+# aliases #
+###########
+
+alias s="ssh t480"
+alias l="eza"
+
 ##############
 # PATH STUFF #
 ##############
@@ -22,6 +29,7 @@ export NVM_DIR="$HOME/.nvm"
 ################
 # zsh config #
 ################
+
 
 autoload -Uz compinit
 compinit
