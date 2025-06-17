@@ -1,8 +1,26 @@
+################
+# zsh config #
+################
+
+autoload -Uz compinit
+compinit
+
+source <(fzf --zsh)
+eval "$(starship init zsh)"
+
+HISTFILE=~/.histfile
+HISTSIZE=10000
+SAVEHIST=10000
+setopt autocd extendedglob notify
+bindkey -v
+
+export EDITOR="nvim"
+
 ################# 
 # system config #
 #################
 
-alias dotfiles='/usr/local/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias df='/usr/local/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 setopt completealiases
 
 ###########
@@ -11,6 +29,9 @@ setopt completealiases
 
 alias s="ssh t480"
 alias l="eza"
+alias la="eza -a"
+alias ll="eza -l"
+alias vim="nvim"
 
 ##############
 # PATH STUFF #
@@ -25,22 +46,3 @@ export NVM_DIR="$HOME/.nvm"
 
 # CARGO
 . ~/.cargo/env
-
-################
-# zsh config #
-################
-
-
-autoload -Uz compinit
-compinit
-
-HISTFILE=~/.histfile
-HISTSIZE=10000
-SAVEHIST=10000
-setopt autocd extendedglob notify
-bindkey -v
-
-eval "$(starship init zsh)"
-
-# fzf zsh integration
-source <(fzf --zsh)
