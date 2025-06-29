@@ -8,6 +8,11 @@ compinit
 source <(fzf --zsh)
 eval "$(starship init zsh)"
 
+# autosuggestions
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# fix for iterm (solarized) <3
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=11"
+
 HISTFILE=~/.histfile
 HISTSIZE=10000
 SAVEHIST=10000
@@ -16,7 +21,7 @@ bindkey -v
 
 export EDITOR="nvim"
 
-################# 
+#################
 # system config #
 #################
 
