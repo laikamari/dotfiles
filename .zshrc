@@ -20,7 +20,6 @@ export EDITOR="nvim"
 # system config #
 #################
 
-alias df='/usr/local/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 setopt completealiases
 
 ###########
@@ -38,6 +37,10 @@ alias vim="nvim"
 ##############
 
 export PATH=$PATH:~/.local/bin
+
+# GO
+# stop putting stuff in ~/go !!!!
+export GOPATH=$HOME/.go
 
 # NVM
 export NVM_DIR="$HOME/.nvm"
