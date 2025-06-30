@@ -1,3 +1,9 @@
+
+if [[ "$OSTYPE" =~ ^darwin ]]; then
+fi
+
+
+
 ################
 # zsh config #
 ################
@@ -9,7 +15,13 @@ source <(fzf --zsh)
 eval "$(starship init zsh)"
 
 # autosuggestions
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+if [[ "$OSTYPE" =~ ^freebsd ]]; then
+		source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+elif [[ "$OSTYPE" =~ ^darwin ]]; then
+		source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+fi
+
 # fix for iterm (solarized) <3
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=11"
 
