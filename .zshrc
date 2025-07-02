@@ -48,6 +48,8 @@ alias l="eza"
 alias la="eza -a"
 alias ll="eza -l"
 
+alias lazyyadm="lazygit --git-dir $HOME/.local/share/yadm/repo.git --work-tree $HOME"
+
 ##############
 # PATH STUFF #
 ##############
