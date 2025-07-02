@@ -1,20 +1,16 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
+call plug#begin()
+Plug 'tpope/vim-sensible'
+Plug 'vim-autoformat/vim-autoformat'
+Plug 'altercation/vim-colors-solarized'
+Plug 'dense-analysis/ale'
+Plug 'ervandew/supertab'
+call plug#end()
 
-" vundle
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-Plugin 'vim-autoformat/vim-autoformat'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'dense-analysis/ale'
-
-call vundle#end()
-filetype plugin indent on
-"
-
-syntax on
+syntax enable
+set background=dark
 colorscheme solarized
+
+filetype plugin on
 
 set number
 set cursorline

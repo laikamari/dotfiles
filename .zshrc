@@ -31,7 +31,7 @@ SAVEHIST=10000
 setopt autocd extendedglob notify
 bindkey -v
 
-export EDITOR="nvim"
+export EDITOR="vim"
 
 #################
 # system config #
@@ -47,7 +47,6 @@ alias s="ssh t480"
 alias l="eza"
 alias la="eza -a"
 alias ll="eza -l"
-alias vim="nvim"
 
 ##############
 # PATH STUFF #
