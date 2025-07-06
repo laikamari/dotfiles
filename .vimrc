@@ -1,9 +1,18 @@
 call plug#begin()
+
+" ive been told to use this lol
 Plug 'tpope/vim-sensible'
-Plug 'vim-autoformat/vim-autoformat'
-Plug 'altercation/vim-colors-solarized'
-Plug 'dense-analysis/ale'
-Plug 'ervandew/supertab'
+
+" semantics
+Plug 'dense-analysis/ale' " linter
+Plug 'vim-autoformat/vim-autoformat' " autoformatter
+
+" ui/ux
+Plug 'ervandew/supertab' " tab completion
+Plug 'junegunn/goyo.vim' " minimal interface toggle
+
+Plug 'altercation/vim-colors-solarized' " colorscheme!
+
 call plug#end()
 
 syntax enable

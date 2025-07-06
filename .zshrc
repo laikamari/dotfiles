@@ -1,9 +1,3 @@
-
-if [[ "$OSTYPE" =~ ^darwin ]]; then
-fi
-
-
-
 ################
 # zsh config #
 ################
@@ -22,7 +16,7 @@ elif [[ "$OSTYPE" =~ ^darwin ]]; then
 		source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 fi
 
-# fix for iterm (solarized) <3
+# fix for iterm <3 (only for solarized!)
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=11"
 
 HISTFILE=~/.histfile
