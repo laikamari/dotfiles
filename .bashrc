@@ -1,29 +1,23 @@
+# blesh setup
+[[ $- == *i* ]] && source "$HOME/.local/share/blesh/ble.sh" --noattach
+
 ################
-# zsh config #
+# bash config #
 ################
 
-autoload -Uz compinit
-compinit
+set -o vi # vi mode yaay :-)
+bind -m vi-insert "\C-l":clear-screen # BUT i need my ^L
 
-source <(fzf --zsh)
-eval "$(starship init zsh)"
+bind "set completion-ignore-case on" # case insensitive tab completion
 
-# autosuggestions
+shopt -s histappend # dont overwrite history (?)
 
-if [[ "$OSTYPE" =~ ^freebsd ]]; then
-		source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-elif [[ "$OSTYPE" =~ ^darwin ]]; then
-		source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-fi
-
-# fix for iterm <3 (only for solarized!)
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=11"
+eval "$(fzf --bash)" # ^r replacement
+eval "$(starship init bash)" # prompt!
 
 HISTFILE=~/.histfile
 HISTSIZE=10000
 SAVEHIST=10000
-setopt autocd extendedglob notify
-bindkey -v
 
 export EDITOR="vim"
 
@@ -31,11 +25,15 @@ export EDITOR="vim"
 # system config #
 #################
 
-setopt completealiases
+# setopt completealiases
+
+## POSIX FROM HERE ON ----------------------------------------------------------
 
 ###########
 # aliases #
 ###########
+
+alias please='sudo !!'
 
 alias s="ssh t480"
 alias l="eza"
@@ -43,6 +41,7 @@ alias la="eza -a"
 alias ll="eza -l"
 
 alias ly="lazygit --git-dir $HOME/.local/share/yadm/repo.git --work-tree $HOME"
+alias yy="yadm add -u && yadm commit && yadm push"
 
 ##############
 # PATH STUFF #
@@ -61,3 +60,7 @@ export NVM_DIR="$HOME/.nvm"
 
 # CARGO
 . ~/.cargo/env
+source ~/.local/share/blesh/ble.sh
+
+# blesh setup
+[[ ! ${BLE_VERSION-} ]] || ble-attach
