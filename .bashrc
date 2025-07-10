@@ -35,7 +35,6 @@ eval "$(starship init bash)" # prompt!
 
 HISTFILE=~/.histfile
 HISTSIZE=10000
-SAVEHIST=10000
 
 export EDITOR="vim"
 

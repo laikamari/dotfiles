@@ -13,6 +13,9 @@ Plug 'junegunn/goyo.vim' " minimal interface toggle
 
 Plug 'altercation/vim-colors-solarized' " colorscheme!
 
+" caddyfile language support ^_^
+Plug 'isobit/vim-caddyfile'
+
 call plug#end()
 
 syntax enable
