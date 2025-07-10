@@ -26,7 +26,10 @@ export NVM_DIR="$HOME/.nvm"
 set -o vi # vi mode yaay :-)
 bind -m vi-insert "\C-l":clear-screen # BUT i need my ^L
 
-bind "set completion-ignore-case on" # case insensitive tab completion
+# tab completion
+bind 'set show-all-if-ambiguous on'
+bind 'TAB:menu-complete'
+bind "set completion-ignore-case on" # case insensitive
 
 shopt -s histappend # dont overwrite history (?)
 
