@@ -1,3 +1,4 @@
+" archived 2025-07-10
 call plug#begin()
 
 " ive been told to use this lol
