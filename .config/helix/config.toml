@@ -1,0 +1,21 @@
+
+theme = "gruvbox_dark_hard"
+
+[editor]
+color-modes = true
+bufferline = "always" # Enable tab bar at the top
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+# File explorer configuration
+[editor.file-picker]
+hidden = false
+parents = false
+
+[editor.indent-guides]
+render = false
+character = "╎" # Some characters that work well: "▏", "┆", "┊", "⸽"
+skip-levels = 1
