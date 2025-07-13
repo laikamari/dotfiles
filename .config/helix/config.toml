@@ -1,8 +1,9 @@
-
 theme = "gruvbox_dark_hard"
 
 [editor]
+true-color = true
 color-modes = true
+cursorline = true
 bufferline = "always" # Enable tab bar at the top
 
 [editor.cursor-shape]
@@ -16,6 +17,25 @@ hidden = false
 parents = false
 
 [editor.indent-guides]
-render = false
+render = true
 character = "╎" # Some characters that work well: "▏", "┆", "┊", "⸽"
 skip-levels = 1
+
+[keys.normal]
+# Quick iteration on config changes
+C-o = ":config-open"
+C-r = ":config-reload"
+
+# Muscle memory
+"{" = ["goto_prev_paragraph", "collapse_selection"]
+"}" = ["goto_next_paragraph", "collapse_selection"]
+0 = "goto_line_start"
+"$" = "goto_line_end"
+"^" = "goto_first_nonwhitespace"
+
+[keys.select]
+"{" = ["goto_prev_paragraph", "collapse_selection"]
+"}" = ["goto_next_paragraph", "collapse_selection"]
+0 = "goto_line_start"
+"$" = "goto_line_end"
+"^" = "goto_first_nonwhitespace"
