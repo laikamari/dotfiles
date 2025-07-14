@@ -1,10 +1,14 @@
-theme = "gruvbox_dark_hard"
+theme = "gruvbox"
 
 [editor]
 true-color = true
 color-modes = true
 cursorline = true
 bufferline = "always" # Enable tab bar at the top
+jump-label-alphabet = "jfkdls;aurieowpqnvmcxz" # Make the jump alphabet focus on home row keys
+
+[editor.statusline]
+right = ["diagnostics", "selections", "position","position-percentage", "file-encoding"]
 
 [editor.cursor-shape]
 insert = "bar"
@@ -18,24 +22,18 @@ parents = false
 
 [editor.indent-guides]
 render = true
-character = "╎" # Some characters that work well: "▏", "┆", "┊", "⸽"
+character = "┆" # Some characters that work well: "▏", "┆", "┊", "⸽"
 skip-levels = 1
 
 [keys.normal]
-# Quick iteration on config changes
-C-o = ":config-open"
-C-r = ":config-reload"
 
-# Muscle memory
+# vim bindings
 "{" = ["goto_prev_paragraph", "collapse_selection"]
 "}" = ["goto_next_paragraph", "collapse_selection"]
 0 = "goto_line_start"
 "$" = "goto_line_end"
 "^" = "goto_first_nonwhitespace"
+G = "goto_file_end"
 
-[keys.select]
-"{" = ["goto_prev_paragraph", "collapse_selection"]
-"}" = ["goto_next_paragraph", "collapse_selection"]
-0 = "goto_line_start"
-"$" = "goto_line_end"
-"^" = "goto_first_nonwhitespace"
+"ret" = "goto_word" # picker
+
