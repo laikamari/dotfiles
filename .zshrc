@@ -37,6 +37,8 @@ setopt completealiases
 # aliases #
 ###########
 
+alias e="$EDITOR"
+
 alias s="ssh t480"
 alias l="eza"
 alias la="eza -a"
@@ -44,6 +46,8 @@ alias ll="eza -l"
 
 alias ly="lazygit --git-dir $HOME/.local/share/yadm/repo.git --work-tree $HOME"
 alias yy="yadm add -u && yadm commit && yadm push"
+
+alias v="cd ~/vault && hx homepage.md"
 
 ##############
 # PATH STUFF #
