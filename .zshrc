@@ -38,6 +38,7 @@ setopt completealiases
 ###########
 
 alias e="$EDITOR"
+alias x="hx"
 
 alias s="ssh t480"
 alias l="eza"
