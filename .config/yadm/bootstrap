@@ -1,0 +1,19 @@
+#!/bin/sh
+
+cd "$HOME"
+
+
+echo "* Installing Rust..."
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+echo "* Installing NVM..."
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+
+echo "* Installing Starship..."
+curl -sS https://starship.rs/install.sh | sh
+
+echo "*Installing fzf..."
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
+
+echo "All done!"
