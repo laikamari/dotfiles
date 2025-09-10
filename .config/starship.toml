@@ -1,16 +1,21 @@
 [hostname]
 ssh_only = false
-ssh_symbol = "@"
-style = 'green'
+ssh_symbol = "<>"
+style = "green"
 
 [username]
 disabled = true
 #format = "[$user]($style) "
 
 [character]
-success_symbol = "[>](bold green)"
+success_symbol = "[♥](bold green)"
 error_symbol = "[x](bold red)"
-vimcmd_symbol = "[<](bold green)"
+vimcmd_symbol = "[«](bold green)"
+
+[battery]
+full_symbol = "* "
+charging_symbol = "++ "
+discharging_symbol = "! "
 
 [git_commit]
 tag_symbol = " tag "

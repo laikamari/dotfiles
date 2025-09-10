@@ -21,7 +21,6 @@ call plug#end()
 
 syntax enable
 set background=dark
-colorscheme solarized
 
 filetype plugin on
 

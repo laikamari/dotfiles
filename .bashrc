@@ -19,9 +19,9 @@ export NVM_DIR="$HOME/.nvm"
 # CARGO
 . ~/.cargo/env
 
-################
-# bash config #
-################
+###############
+# BASH CONFIG #
+###############
 
 set -o vi                             # vi mode yaay :-)
 bind -m vi-insert "\C-l":clear-screen # BUT i need my ^L
@@ -44,22 +44,13 @@ export EDITOR="hx"
 # aliases #
 ###########
 
-alias please='sudo !!'
+alias please='sudo $(fc -ln -1)'
 
-alias s="ssh t480"
 alias l="eza"
 alias la="eza -a"
 alias ll="eza -l"
 
 alias e="$EDITOR"
 
-alias ly="lazygit --git-dir $HOME/.local/share/yadm/repo.git --work-tree $HOME"
 alias yy="yadm add -u && yadm commit && yadm push"
 
-# pnpm
-export PNPM_HOME="/home/mari/.local/share/pnpm"
-case ":$PATH:" in
-*":$PNPM_HOME:"*) ;;
-*) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-# pnpm end

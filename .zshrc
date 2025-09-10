@@ -45,10 +45,7 @@ alias l="eza"
 alias la="eza -a"
 alias ll="eza -l"
 
-alias ly="lazygit --git-dir $HOME/.local/share/yadm/repo.git --work-tree $HOME"
 alias yy="yadm add -u && yadm commit && yadm push"
-
-alias v="cd ~/vault && hx homepage.md"
 
 ##############
 # PATH STUFF #
@@ -70,4 +67,9 @@ export NVM_DIR="$HOME/.nvm"
 
 # CARGO
 . ~/.cargo/env
+
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/mari/.lmstudio/bin"
+# End of LM Studio CLI section
 

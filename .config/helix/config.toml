@@ -1,4 +1,4 @@
-theme = "gruvbox_dark_hard"
+theme = "rose_pine"
 
 [editor]
 true-color = true
@@ -9,6 +9,7 @@ jump-label-alphabet = "jfkdls;aurieowpqnvmcxz" # Make the jump alphabet focus on
 
 [editor.soft-wrap]
 enable = true
+wrap-indicator = "»"
 
 [editor.statusline]
 right = ["diagnostics", "selections", "position","position-percentage", "file-encoding"]
@@ -22,11 +23,6 @@ select = "underline"
 [editor.file-picker]
 hidden = false
 parents = false
-
-[editor.indent-guides]
-render = true
-character = "┆" # Some characters that work well: "▏", "┆", "┊", "⸽"
-skip-levels = 1
 
 [keys.normal]
 
