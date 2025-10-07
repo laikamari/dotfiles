@@ -39,6 +39,7 @@ alias l="eza"
 alias la="eza -a"
 alias ll="eza -l"
 
+alias dc="docker compose"
 
 alias yy="yadm add -u && yadm commit && yadm push"
 

@@ -5,7 +5,6 @@
 autoload -Uz compinit
 compinit
 
-source <(fzf --zsh)
 eval "$(starship init zsh)"
 
 # autosuggestions
@@ -40,6 +39,8 @@ setopt completealiases
 alias e="$EDITOR"
 alias x="hx"
 
+alias get="curl -LO"
+
 alias s="ssh t480"
 alias l="eza"
 alias la="eza -a"
@@ -67,9 +68,4 @@ export NVM_DIR="$HOME/.nvm"
 
 # CARGO
 . ~/.cargo/env
-
-
-# Added by LM Studio CLI (lms)
-export PATH="$PATH:/Users/mari/.lmstudio/bin"
-# End of LM Studio CLI section
 
