@@ -17,6 +17,8 @@ export PATH=~/.local/bin:$PATH
 #  - no_empty_cmd_completion - do not TAB expand empty lines
 shopt -s autocd cdspell direxpand dirspell globstar histappend histverify \
     nocaseglob no_empty_cmd_completion
+
+[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
     
 set -o vi                             # vi mode yaay :-)
 bind -m vi-insert "\C-l":clear-screen # BUT i need my ^L
@@ -47,7 +49,6 @@ alias yy="yadm add -u && yadm commit && yadm push"
 
 # Homebrew
 export HOMEBREW_NO_ENV_HINTS=1
-[[ -r "$HOMEBREW_PREFIX/etc/profile.d/bash_completion.sh" ]] && . "$HOMEBREW_PREFIX/etc/profile.d/bash_completion.sh"
 
 # Go
 export GOPATH=$HOME/.go # stop putting stuff in ~/go !!!!

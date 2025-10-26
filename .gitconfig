@@ -1,3 +1,5 @@
 [user]
 	email = laikamari@fastmail.org
 	name = Mariam Askarpour
+[core]
+	excludesFile = ~/.gitignore

@@ -1,0 +1,7 @@
+[auth]
+username = 'laika'
+password = '4$rGruf1#43'
+
+[server]
+host = 'https://nd.avramzone.org'
+scrobble = true   # Use Subsonic scrobbling for last.fm/ListenBrainz (default: false)
