@@ -6,7 +6,7 @@ font-style-bold = "Bold"
 font-style-italic = "SemiBold Italic"
 font-style-bold-italic = "Bold Italic
 
-theme = Rose Pine
+theme = Ayu
 shell-integration-features = no-cursor
 
 window-padding-x = 16
