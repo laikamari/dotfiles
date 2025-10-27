@@ -4,8 +4,8 @@ ssh_symbol = "<>"
 style = "green"
 
 [username]
-disabled = true
-#format = "[$user]($style) "
+#disabled = false
+format = "[$user]($style) "
 
 [character]
 success_symbol = "[>](bold green)"
