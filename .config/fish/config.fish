@@ -15,7 +15,6 @@ source (/usr/local/bin/starship init fish --print-full-init | psub)
 
 set -gx EDITOR hx
 
-alias please='sudo '(fc -ln -1 | string collect; or echo)
 alias l='eza'
 alias la='eza -a'
 alias ll='eza -l'

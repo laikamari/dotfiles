@@ -47,9 +47,10 @@ alias ga="git add"
 alias gc="git commit"
 alias gp="git push"
 
+alias y="yadm enter bash" # then use git as usual
+
 alias dc="docker compose"
 
-alias yy="yadm add -u && yadm commit && yadm push"
 
 ### Package managers ###
 
